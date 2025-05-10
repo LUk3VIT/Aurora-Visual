@@ -3,7 +3,6 @@ run-name: Pipeline de inntegração contínua e analise de código
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
     branches:
       - dev
 
