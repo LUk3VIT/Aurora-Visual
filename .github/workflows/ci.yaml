@@ -22,7 +22,7 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           args: >
-            -Dsonar.projectKey=Aurora Visual
+            -Dsonar.projectKey=Aurora-Visual
             -Dsonar.projectName=Aurora Visual
             -Dsonar.projectVersion=1.0
             -Dsonar.sources=.
