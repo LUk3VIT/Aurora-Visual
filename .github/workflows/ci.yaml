@@ -23,6 +23,6 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=Aurora-Visual
-            -Dsonar.projectName=Aurora Visual
+            -Dsonar.projectName="Aurora Visual"
             -Dsonar.projectVersion=1.0
             -Dsonar.sources=.
