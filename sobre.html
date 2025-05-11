@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/equipe.css">
+    <link rel="stylesheet" href="css/estrutura.css">
+    <link rel="stylesheet" href="css/logoCards.css">
+    <link rel="stylesheet" href="css/servicosBTNcontato.css">
+    <title>Sobre - Aurora Visual</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid-home">
+              <a class="navbar-brand-home" href="#">
+                Aurora Visual
+              </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+    </header>
+
+    <section class="main">
+        <h1>Sobre a Aurora Visual</h1>
+        <p>Onde suas ideias ganham forma e brilho.</p>
+    </section>
+
+    <section class="content-sobre">
+        <section class="content">
+            <div class="card">
+                <h2>Quem somos</h2>
+                <p>ewfjwejfwelfwe fwetfkjwenefjnwjfe kwnfejwnfejwnfel enflwnfelwjew wekjfnwjkefrjnwenffewe f</p>
+            </div>
+            <div class="card">
+                <h2>Nossa missão</h2>
+                <p>ewfjwejfwelfwe fwetfkjwenefjnwjfe kwnfejwnfejwnfel enflwnfelwjew wekjfnwjkefrjnwenffewe f</p>
+            </div>
+        </section>
+
+<div class="secao equipe-full-width equipe-centralizada">
+    <h2>Nossa Equipe</h2>
+    <div class="equipe-carrossel-container">
+        <div class="equipe-carrossel">
+            <div class="membro-carrossel">
+                <img src="img/nic.png" alt="Integrante 1">
+                <h3>Nicolas</h3>
+            </div>
+            <div class="membro-carrossel">
+                <img src="img/lucao.png" alt="Integrante 2">
+                <h3>Lucas</h3>
+            </div>
+            <div class="membro-carrossel">
+                <img src="img/vitao.png" alt="Integrante 3">
+                <h3>Vitor</h3>
+            </div>
+            <div class="membro-carrossel">
+                <img src="img/kaua.png" alt="Integrante 4">
+                <h3>Kaua</h3>
+            </div>
+            <div class="membro-carrossel">
+                <img src="img/jao.png" alt="Integrante 5">
+                <h3>João</h3>
+            </div>
+        </div>
+    </div>
+    <div class="carrossel-nav">
+        <button id="prevBtn">Anterior</button>
+        <button id="nextBtn">Próximo</button>
+    </div>
+</div>
+
+        <div class="secao">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-container">
+                <div class="servico-card">
+                    <h3>Design Gráfico</h3>
+                    <p>Criação de logotipos memoráveis, identidade visual completa e materiais de marketing impactantes para sua marca.</p>
+                </div>
+                <div class="servico-card">
+                    <h3>Produção de Vídeo</h3>
+                    <p>Desenvolvimento de vídeos institucionais, promocionais, animações e conteúdo audiovisual envolvente para diversas plataformas.</p>
+                </div>
+                <div class="servico-card">
+                    <h3>Fotografia</h3>
+                    <p>Cobertura fotográfica profissional para eventos corporativos, produtos, retratos e ensaios, capturando momentos e detalhes importantes.</p>
+                </div>
+                <div class="servico-card">
+                    <h3>Web Design</h3>
+                    <p>Criação e otimização de websites responsivos, intuitivos e com foco na experiência do usuário, alinhados aos seus objetivos de negócio.</p>
+                </div>
+                <div class="servico-card">
+                    <h3>Consultoria Visual</h3>
+                    <p>Assessoria especializada em comunicação visual, auxiliando na definição de estratégias e soluções criativas para fortalecer sua marca.</p>
+                </div>
+                <div class="servico-card">
+                    <h3>Motion Graphics</h3>
+                    <p>Criação de animações e gráficos em movimento para explicar conceitos, promover produtos e serviços de forma dinâmica e atraente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="secao chamada-acao">
+            <p>Pronto para dar vida às suas ideias?</p>
+            <a href="#">Entre em contato conosco</a>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <h4 class="rodape-title">Aurora Visual</h4>
+        <p class="rodape-text">Endereço Rua Infinito Além, 999, Espaço, Logo Ali</p>
+    </footer>
+
+    <script>
+        const carrosselContainer = document.querySelector('.equipe-carrossel-container');
+        const carrossel = document.querySelector('.equipe-carrossel');
+        const membrosCarrossel = document.querySelectorAll('.membro-carrossel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const numMembros = membrosCarrossel.length;
+        let currentIndex = 0; // Começar do primeiro integrante (índice 0)
+
+        function updateCarrossel() {
+            membrosCarrossel.forEach((membro, index) => {
+                membro.className = 'membro-carrossel'; // Resetar classes
+
+                // Calcular os índices para o principal, próximo e anterior com loop infinito
+                const membroPrincipalIndex = currentIndex;
+                const membroProximoIndex = (currentIndex + 1) % numMembros;
+                const membroAnteriorIndex = (currentIndex - 1 + numMembros) % numMembros;
+
+                if (index === membroPrincipalIndex) {
+                    membro.classList.add('principal');
+                } else if (index === membroProximoIndex) {
+                    membro.classList.add('proximo');
+                } else if (index === membroAnteriorIndex) {
+                    membro.classList.add('anterior');
+                } else if (
+                    (currentIndex === 0 && index === numMembros - 1) || // Último visível quando o primeiro é principal
+                    (currentIndex === numMembros - 1 && index === 0)    // Primeiro visível quando o último é principal
+                ) {
+                    // Adicionar classes para os membros nas extremidades opostas
+                    if (currentIndex === 0 && index === numMembros - 1) {
+                        membro.classList.add('anterior'); // O último é 'anterior' ao primeiro
+                    } else if (currentIndex === numMembros - 1 && index === 0) {
+                        membro.classList.add('proximo'); // O primeiro é 'próximo' ao último
+                    }
+                } else {
+                    // Esconder os outros membros
+                    membro.classList.add('escondido');
+                }
+            });
+
+            const larguraMembroPrincipal = document.querySelector('.membro-carrossel.principal').offsetWidth;
+            const larguraContainer = carrosselContainer.offsetWidth;
+            const offset = (larguraContainer - larguraMembroPrincipal) / 2 - (currentIndex * larguraMembroPrincipal);
+
+            carrossel.style.transform = `translateX(${offset}px)`;
+
+            // Ajustar a visibilidade dos membros 'escondidos' para evitar transições bruscas
+            membrosCarrossel.forEach(membro => {
+                if (membro.classList.contains('escondido')) {
+                    membro.style.visibility = 'hidden';
+                } else {
+                    membro.style.visibility = 'visible';
+                }
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + numMembros) % numMembros;
+            updateCarrossel();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % numMembros;
+            updateCarrossel();
+        });
+
+        // Inicializa o carrossel
+        updateCarrossel();
+    </script>
+</body>
+</html>
