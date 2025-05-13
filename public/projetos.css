@@ -31,30 +31,6 @@ body{
     color: white !important;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.main-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.content-h1{
-    color: White;
-}
-
-.content-p{
-    color: White;
-}
-
 .rodape{
   position: absolute;
     bottom: 0;

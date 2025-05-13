@@ -61,3 +61,12 @@ Branch: main
 
 - no Arquivo ci.yaml o sonar so vaiser ativo quando for feito um 
 pull request para dev 
+
+## Configuração do Deploy
+
+projeto esta no azuer arc 
+
+configuração precisa para funcionar do arquivo CD e
+do Dockerfile
+
+link do site: https://aurora-visual-oficial.azurewebsites.net
