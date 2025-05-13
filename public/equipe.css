@@ -1,0 +1,110 @@
+.secao {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.secao h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.8em;
+    color: #ddd;
+    text-align: center;
+}
+
+.secao p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+/* Estilos para o Carrossel de Equipe Centralizado */
+.equipe-full-width.equipe-centralizada {
+    margin-left: -2em;
+    margin-right: -2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #333;
+    border-radius: 0;
+    text-align: center; 
+}
+
+.equipe-carrossel-container {
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0; /* Reduzir o padding vertical */
+    display: flex;
+    justify-content: center; 
+}
+
+.equipe-carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+}
+
+.membro-carrossel {
+    flex: 0 0 auto;
+    text-align: center;
+    opacity: 0.7;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.membro-carrossel img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+}
+
+.membro-carrossel.principal {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.membro-carrossel.proximo,
+.membro-carrossel.anterior {
+    opacity: 0.9;
+    transform: scale(0.95);
+}
+
+.membro-carrossel.anterior-escondido,
+.membro-carrossel.proximo-escondido {
+    opacity: 0;
+    transform: scale(0.7);
+    visibility: hidden;
+}
+
+.membro-carrossel h3 {
+    margin-bottom: 0;
+}
+
+.carrossel-nav {
+    margin-top: 1em;
+}
+
+.carrossel-nav button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrossel-nav button:hover {
+    background-color: #666;
+}
+
+
+.membro-carrossel.escondido {
+    opacity: 0;
+    transform: scale(0.7);
+    visibility: hidden;
+}
