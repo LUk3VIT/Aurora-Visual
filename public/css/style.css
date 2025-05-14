@@ -1,0 +1,55 @@
+:root{
+    --blackMain: #000000;
+    --cyanitulo: #00FFFF;
+    --magentaButtonOne: #FF00FF;
+    --orangeredButtonTwo :#FF4500;
+    --orangeDateil: #FF4500;
+    --gosthTexto: #F8F8FF;
+}
+
+body{
+    background: var(--blackMain);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.navbarM{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.container-fluidM{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.navbar-brand{
+    color: var(--cyanitulo) !important;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-item{
+    margin: 0rem 1rem;
+}
+
+.nav-linkM{
+    display: block;
+    padding: .5rem 1rem;
+    color: var(--gosthTexto);
+    text-decoration: none;
+}
+
+.nav-linkM:hover{
+    text-decoration: none;
+    color: var(--orangeredButtonTwo);
+}
