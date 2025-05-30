@@ -5,13 +5,18 @@
     --orangeredButtonTwo :#FF4500;
     --orangeDateil: #d64009;
     --gosthTexto: #F8F8FF;
+    --azulPetroleo: #124e69;
 }
 
 body{
     background: var(--blackMain);
+    background-image: linear-gradient((var(--blackMain), var(--azulPetroleo)));
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .navbarM{
@@ -73,14 +78,17 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0.3rem 0rem;
     flex-wrap: wrap;
     width: 100%;
+    height: 50%;
 }
 
 .apresentacao-titulo{
     padding: 5rem;
     display: flex;
+    flex-direction: column;
+    width: 40%;
+
 }
 
 .apresentacao-text{
@@ -90,7 +98,6 @@ body{
 }
 
 @keyframes mudarCor{
-    0% { color: var(--blackMain); }
     20% { color: var(--cyanitulo); }
 
     40% { color: var(--gosthTexto); }
@@ -100,55 +107,76 @@ body{
     100% {color: var(--orangeredButtonTwo);}
 }
 
+.apresentacao-parag{
+    color: var(--gosthTexto);
+    font-size: 1.1rem;
+}
 
 .apresentacao-img{
     width: 80%;
 }
 
 .main{
-    background: var(--magentaButtonOne);
+    background: var(--blackMain);
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5rem 15.5rem;
 }
 
-.boasvindas{
+.card-sobre{
+    border: solid 0.6rem var(--magentaButtonOne);
+    padding: 0.9rem 1rem;
+    border-radius: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.card-title{
+    color: var(--orangeDateil);
+    font-size: 1.5rem;
 }
 
-.text-title{
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-}
-
-.text-title-h1{
+.card-sobre:hover{
+    position: relative;
+    padding: 1.1rem 1.5rem;
+    box-shadow: 0px 0px 20px 3px var(--magentaButtonOne);
+    border: solid .5rem var(--magentaButtonOne); 
     color: var(--cyanitulo);
-    font-size: 3rem;
 }
 
-.text-paragrafo{
+.card-projeto{
+    border: solid 0.6rem var(--magentaButtonOne);
+    padding: 0.9rem 1rem;
+    border-radius: 5rem;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
-    width: 65%;
-
+    align-items: center;
 }
 
-.text-paragrafo-p{
-    color: var(--gosthTexto);
-    font-size: 1rem;
+.card-projeto:hover{
+    position: relative;
+    padding: 1.1rem 1.5rem;
+    box-shadow: 0px 0px 20px 3px var(--magentaButtonOne);
+    border: solid .5rem var(--magentaButtonOne); 
+    color: var(--cyanitulo);
 }
 
+.card-reuniao{
+    border: solid 0.6rem var(--magentaButtonOne);
+    padding: 0.9rem 1rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
-
-
-
+.card-reuniao:hover{
+    position: relative;
+    padding: 1.1rem 1.5rem;
+    box-shadow: 0px 0px 20px 3px var(--magentaButtonOne);
+    border: solid .5rem var(--magentaButtonOne); 
+    color: var(--cyanitulo);
+}
